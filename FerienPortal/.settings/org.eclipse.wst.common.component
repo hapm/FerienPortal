@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="FerienPortal">
+        <wb-resource deploy-path="/" source-path="/EarContent"/>
+        <dependent-module archiveName="FerienPortalClient.jar" deploy-path="/" handle="module:/resource/FerienPortalClient/FerienPortalClient">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FerienPortalEJB.jar" deploy-path="/" handle="module:/resource/FerienPortalEJB/FerienPortalEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FerienPortalWeb.war" deploy-path="/" handle="module:/resource/FerienPortalWeb/FerienPortalWeb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FerienPortalConnector.rar" deploy-path="/" handle="module:/resource/FerienPortalConnector/FerienPortalConnector">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

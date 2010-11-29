@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+  <runtime name="GlassFish Server Open Source Edition 3 (Java EE 6)"/>
+  <fixed facet="java"/>
+  <fixed facet="jst.connector"/>
+  <installed facet="java" version="1.6"/>
+  <installed facet="jst.connector" version="1.6"/>
+  <installed facet="sun.facet" version="9"/>
+</faceted-project>

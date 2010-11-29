@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:application="http://java.sun.com/xml/ns/javaee/application_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd" version="6">
+  <display-name>FerienPortal</display-name>
+  <module>
+    <java>FerienPortalClient.jar</java>
+  </module>
+  <module>
+    <ejb>FerienPortalEJB.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>FerienPortalWeb.war</web-uri>
+      <context-root>FerienPortalWeb</context-root>
+    </web>
+  </module>
+</application>
