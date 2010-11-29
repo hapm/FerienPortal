@@ -2,6 +2,7 @@ package fhbrs.ateam.ferienportal.data;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
 import java.util.Set;
 
 
@@ -11,6 +12,7 @@ import java.util.Set;
  */
 @Entity
 @Table(name="hotel")
+@NamedQuery( name = "findAllHotels" , query = "SELECT h FROM Hotel AS h" )
 public class Hotel implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private int id;
