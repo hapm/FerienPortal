@@ -12,24 +12,23 @@ import javax.persistence.*;
 @Table(name="booking")
 public class Booking implements Serializable {
 	private static final long serialVersionUID = 1L;
-	private int id;
+	private int idbooking;
 	private int persons;
-	private User user;
 	private Hotel hotel;
 	private Travel travel;
+	private User user;
 
     public Booking() {
     }
 
 
 	@Id
-	@Column(name="idbooking")
-	public int getId() {
-		return this.id;
+	public int getIdbooking() {
+		return this.idbooking;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setIdbooking(int idbooking) {
+		this.idbooking = idbooking;
 	}
 
 
@@ -41,18 +40,6 @@ public class Booking implements Serializable {
 		this.persons = persons;
 	}
 
-
-	//bi-directional many-to-one association to User
-    @ManyToOne
-	@JoinColumn(name="iduser")
-	public User getUser() {
-		return this.user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
-	
 
 	//bi-directional many-to-one association to Hotel
     @ManyToOne
@@ -75,6 +62,18 @@ public class Booking implements Serializable {
 
 	public void setTravel(Travel travel) {
 		this.travel = travel;
+	}
+	
+
+	//bi-directional many-to-one association to User
+    @ManyToOne
+	@JoinColumn(name="iduser")
+	public User getUser() {
+		return this.user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 	
 }

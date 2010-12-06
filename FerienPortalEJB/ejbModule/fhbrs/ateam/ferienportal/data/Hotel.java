@@ -2,7 +2,7 @@ package fhbrs.ateam.ferienportal.data;
 
 import java.io.Serializable;
 import javax.persistence.*;
-
+import java.math.BigDecimal;
 import java.util.Set;
 
 
@@ -12,11 +12,13 @@ import java.util.Set;
  */
 @Entity
 @Table(name="hotel")
-@NamedQuery( name = "findAllHotels" , query = "SELECT h FROM Hotel AS h" )
+@NamedQuery (name = "findAllHotels", query = "SELECT h FROM Hotel AS h")
 public class Hotel implements Serializable {
 	private static final long serialVersionUID = 1L;
-	private int id;
+	private int idhotel;
+	private String city;
 	private String name;
+	private BigDecimal price;
 	private Set<Booking> bookings;
 	private Set<Rating> ratings;
 
@@ -25,13 +27,21 @@ public class Hotel implements Serializable {
 
 
 	@Id
-	@Column(name="idhotel")
-	public int getId() {
-		return this.id;
+	public int getIdhotel() {
+		return this.idhotel;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setIdhotel(int idhotel) {
+		this.idhotel = idhotel;
+	}
+
+
+	public String getCity() {
+		return this.city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
 	}
 
 
@@ -41,6 +51,15 @@ public class Hotel implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+
+	public BigDecimal getPrice() {
+		return this.price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
 	}
 
 

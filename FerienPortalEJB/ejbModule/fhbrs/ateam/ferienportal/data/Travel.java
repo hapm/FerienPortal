@@ -13,7 +13,7 @@ import java.util.Set;
 @Table(name="travel")
 public class Travel implements Serializable {
 	private static final long serialVersionUID = 1L;
-	private int id;
+	private int idtravel;
 	private Set<Booking> bookings;
 	private User user;
 
@@ -22,13 +22,12 @@ public class Travel implements Serializable {
 
 
 	@Id
-	@Column(name="idtravel")
-	public int getId() {
-		return this.id;
+	public int getIdtravel() {
+		return this.idtravel;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setIdtravel(int idtravel) {
+		this.idtravel = idtravel;
 	}
 
 

@@ -15,8 +15,8 @@ public class Rating implements Serializable {
 	private RatingPK id;
 	private String comment;
 	private int rating;
-	private User user;
 	private Hotel hotel;
+	private User user;
 
     public Rating() {
     }
@@ -51,18 +51,6 @@ public class Rating implements Serializable {
 	}
 
 
-	//bi-directional many-to-one association to User
-    @ManyToOne
-	@JoinColumn(name="iduser")
-	public User getUser() {
-		return this.user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
-	
-
 	//bi-directional many-to-one association to Hotel
     @ManyToOne
 	@JoinColumn(name="idhotel")
@@ -72,6 +60,18 @@ public class Rating implements Serializable {
 
 	public void setHotel(Hotel hotel) {
 		this.hotel = hotel;
+	}
+	
+
+	//bi-directional many-to-one association to User
+    @ManyToOne
+	@JoinColumn(name="iduser")
+	public User getUser() {
+		return this.user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 	
 }
