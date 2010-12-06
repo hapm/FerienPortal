@@ -17,7 +17,6 @@ public class User implements Serializable {
 	private String username;
 	private Set<Booking> bookings;
 	private Set<Rating> ratings;
-	private Set<Travel> travels;
 
     public User() {
     }
@@ -61,17 +60,6 @@ public class User implements Serializable {
 
 	public void setRatings(Set<Rating> ratings) {
 		this.ratings = ratings;
-	}
-	
-
-	//bi-directional many-to-one association to Travel
-	@OneToMany(mappedBy="user")
-	public Set<Travel> getTravels() {
-		return this.travels;
-	}
-
-	public void setTravels(Set<Travel> travels) {
-		this.travels = travels;
 	}
 	
 }
