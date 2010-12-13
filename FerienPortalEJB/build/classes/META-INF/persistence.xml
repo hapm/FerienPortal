@@ -4,7 +4,6 @@
 		<jta-data-source>ferienportal</jta-data-source>
 		<class>fhbrs.ateam.ferienportal.data.Booking</class>
 		<class>fhbrs.ateam.ferienportal.data.Hotel</class>
-		<class>fhbrs.ateam.ferienportal.data.Travel</class>
 		<class>fhbrs.ateam.ferienportal.data.Rating</class>
 		<class>fhbrs.ateam.ferienportal.data.RatingPK</class>
 		<class>fhbrs.ateam.ferienportal.data.User</class>

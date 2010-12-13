@@ -20,7 +20,12 @@ import fhbrs.ateam.ferienportal.data.Hotel;
 public class HotelManagement implements HotelManagementRemote, HotelManagementLocal {
 	@PersistenceContext(unitName="ferienportal")
 	public EntityManager em; 
-	
+	public void save(Hotel h){
+		em.persist(h);
+	}
+	public void remove(Hotel h){
+		em.remove(h);
+	}
 	public List<Hotel> getHotelList() {
 		if (em == null) {
 			EntityManagerFactory emf = Persistence.createEntityManagerFactory("ferienportal");

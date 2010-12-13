@@ -8,4 +8,6 @@ import fhbrs.ateam.ferienportal.data.Hotel;
 @Remote
 public interface HotelManagementRemote {
 	public List<Hotel> getHotelList();
+	public void save(Hotel h);
+	public void remove(Hotel h);
 }

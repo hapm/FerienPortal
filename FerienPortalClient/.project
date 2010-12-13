@@ -3,6 +3,7 @@
 	<name>FerienPortalClient</name>
 	<comment></comment>
 	<projects>
+		<project>FerienPortalEJB</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -9,7 +9,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 
-import fhbrs.ateam.ferienportal.data.Travel;
+import fhbrs.ateam.ferienportal.data.Booking;
 
 /**
  * Session Bean implementation class TravelSearchAgent
@@ -22,12 +22,12 @@ public class TravelSearchAgent implements TravelSearchAgentRemote, TravelSearchA
 	public TravelSearchAgent() {
     }
      
-    public Vector<Travel> search(TravelRequest travel) {
+    public Vector<Booking> search(Booking booking) {
     	if (em == null) {
 			EntityManagerFactory emf = Persistence.createEntityManagerFactory("ferienportal");
 			em = (EntityManager) emf.createEntityManager();
 		}
-    	Vector<Travel> results = new Vector<Travel>();
+    	Vector<Booking> results = new Vector<Booking>();
     	return results;
     }
 
